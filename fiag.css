@@ -1,0 +1,112 @@
+/* Universal styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #202C36;
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Header styles */
+header {
+    background-color: #2B3844;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+header button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    display: block;
+}
+
+/* Countries styles */
+.counties {
+    padding-bottom: 60px;
+}
+
+.counties form {
+    width: 450px;
+    margin: 45px 0;
+}
+
+.counties input {
+    background-color: #283844;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+}
+
+.counties .flags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.counties .flag {
+    width: 22%;
+    background-color: #283844;
+    margin-top: 60px;
+}
+
+.counties img {
+    width: 100%;
+    height: 160px;
+}
+
+.counties.mt-70 {
+    margin-top: 100px;
+}
+
+.counties h3 {
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    header img {
+        width: 200px;
+    }
+
+    .counties .flags {
+        justify-content: center;
+    }
+
+    .counties .flag {
+        width: 80%;
+        margin-top: 60px;
+    }
+
+    .counties form {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .counties .flag {
+        width: 45%;
+    }
+
+    .counties form {
+        width: 100%;
+    }
+}
